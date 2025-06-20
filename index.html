@@ -30,8 +30,8 @@
 			import MinecraftClient from "./minecraft-web.js";
 			await cheerpjInit({
 				version: 8,
-				javaProperties: ["java.library.path=/app/libraries/"],
-				libraries: {"libGL.so.1": "/app/libraries/gl4es.wasm", "libEGL.so.1": "/app/libraries/libegl.wasm", "libGLESv2.so.1": "/app/libraries/libgles.wasm"},
+				javaProperties: ["java.library.path=app/libraries/"],
+				libraries: {"libGL.so.1": "app/libraries/gl4es.wasm", "libEGL.so.1": "app/libraries/libegl.wasm", "libGLESv2.so.1": "app/libraries/libgles.wasm"},
 				enableX11:true
 			});
 			const mc = new MinecraftClient();
