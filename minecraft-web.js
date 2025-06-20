@@ -85,7 +85,7 @@ export default class MinecraftClient {
 
     const exitCode = await cheerpjRunMain(
       "net.minecraft.client.Minecraft",
-      `./app/lwjgl-2.9.3.jar:./app/lwjgl_util-2.9.3.jar:./app/client.jar`
+      `app/lwjgl-2.9.3.jar:app/lwjgl_util-2.9.3.jar:app/client.jar`
     );
 
     this.#isRunning = false;
